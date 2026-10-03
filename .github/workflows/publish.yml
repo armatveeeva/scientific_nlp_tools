@@ -3,14 +3,14 @@ name: Publish Python Package to GitHub Packages
 on:
   push:
     tags:
-      - 'v*' # Запускается только при создании тега версии, например, v0.1.0
+      - 'v*'
 
 jobs:
   build-and-publish:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-      packages: write # Критически важно: разрешение на запись в Packages
+      packages: write
 
     steps:
       - name: Checkout repository
@@ -34,4 +34,4 @@ jobs:
           TWINE_USERNAME: __token__
           TWINE_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          twine upload --repository-url https://pypi.pkg.github.com/armatveeeva dist/*
+          twine upload --repository-url https://pypi.pkg.github.com dist/*
