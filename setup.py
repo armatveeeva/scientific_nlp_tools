@@ -4,8 +4,8 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
-    name="scientific_nlp_tools",
-    version="1.0.1",
+    name="scientific-nlp-tools",
+    version="1.0.2",
     author="Anastasiia Armatveeva",
     author_email="armatveeva@rosatom.ru",
     description="Python library for scientific text processing: semantic search, summarization, entity extraction, and keyword generation",
