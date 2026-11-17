@@ -13,6 +13,6 @@ from .summarization import TextSummarizer
 from .extraction import ChemicalEntityExtractor, KeywordGenerator
 from .preprocessing import TextCleaner
 
-__version__ = "1.0.3"
+__version__ = "1.0.4"
 __author__ = "Anastasiia Matveeva"
 __email__ = "armatveeeva@gmail.com"
